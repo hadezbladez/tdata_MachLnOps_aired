@@ -1,0 +1,29 @@
+
+jupyter notebook --ip='*' --NotebookApp.token='' --NotebookApp.password=''
+
+////building up from image
+1. run CMD
+docker build -t mlops_trnest_self .
+
+2. run image then porting up to 8501
+
+//installation demand
+https://linux.how2shout.com/how-to-install-brew-ubuntu-20-04-lts-linux/
+https://github.com/oven-sh/homebrew-bun/issues/9
+
+//more shit...
+apt-get install build-essential procps curl file git
+
+
+
+//failed item env set
+
+Set-Item -Path env:AZURE_RESOURCE_GROUP -Value "D:\hardbase_app\rendercli\render-windows-x86_64.exe"
+[Environment]::SetEnvironmentVariable("render", "D:\hardbase_app\rendercli\render-windows-x86_64.exe", "Machine")
+pwsh -c { $env:CC="hello"; D:\hardbase_app\rendercli\render-windows-x86_64.exe }
+
+////---- learning cmd git?
+https://www.atlassian.com/git/tutorials/setting-up-a-repository
+git add .
+git commit -m "any shit to says..."
+git push
